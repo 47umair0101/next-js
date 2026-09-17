@@ -1,0 +1,14 @@
+/* @import "tailwindcss"; */
+
+
+.global-text {
+  color: red;
+}
+
+.active-link {
+  color: red !important;
+}
+
+.pending-link {
+  color: green !important;
+}
