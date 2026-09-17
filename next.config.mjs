@@ -2,23 +2,75 @@
 const nextConfig = {
   /* config options here */
   reactCompiler: true,
-
-  async headers() {
-    return [
-      {
-        source: "/about",
-        headers: [
-          {
-            key: "Permission-Policy",
-            value: "camera=();battery=(self);browsing-topics=();geolocation=();microphone=('https://domain.com')"
-          }
-        ]
-      }
-    ]
+  poweredByHeader: false,
+  pageExtensions: ['js', 'jsx'],
+  httpAgentOptions: {
+    keepAlive: true,
+    timeout: 60000
+  },
+  compress: false,
+  images: {
+    domains: ['www.nokia.com']
   }
+
 }
 
 export default nextConfig;
+
+
+
+
+
+
+
+
+
+
+
+
+// httpAgentOptions: {}
+
+
+
+
+
+// distDir: 'build' 
+
+
+
+
+
+// headers: [
+//   {
+//     key: "X-Content-Type-Options",
+//     value: "nosniff"
+//   }
+// ]
+
+
+
+
+
+
+// headers: [
+//   {
+//     key: "Stict-transport-security",
+//     value: "max-age=63072000;includeSubDomains;preload"
+//   }
+// ]
+
+
+
+
+
+
+// headers: [
+//   {
+//     key: "Permission-Policy",
+//     value: "camera=();battery=(self);browsing-topics=();geolocation=();microphone=('https://domain.com')"
+//   }
+// ]
+
 
 
 
