@@ -1,10 +1,14 @@
-'use client'
+// 'use client'
 
 import Menu from '@/components/Menu'
 import React from 'react'
-import { useRouter } from 'next/navigation'
+// import { useRouter } from 'next/navigation'
 
 function page() {
+
+
+  /*
+
   const router = useRouter();
   const Goto = () => {
     router.push('/about?name=nexjs&version=16');
@@ -27,15 +31,26 @@ function page() {
     // window.history.forward();
   }
 
+  */
+
   return (
     <div>
       <Menu />
       <h1>This is Home Page</h1>
-      <button onClick={Goto}>Goto About</button>
+      {/* <button onClick={Goto}>Goto About</button>
       <button onClick={Replace}>Replace</button>
       <button onClick={Refresh}>Refresh</button>
       <button onClick={Back}>Back</button>
-      <button onClick={Forward}>Forward</button>
+      <button onClick={Forward}>Forward</button> */}
+
+      <br />
+
+      <hr />
+
+
+      <p>API Key: {process.env.API_KEY}</p>
+
+
     </div>
   )
 }
