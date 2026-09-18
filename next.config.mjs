@@ -6,12 +6,16 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx'],
   httpAgentOptions: {
     keepAlive: true,
-    timeout: 60000
   },
   compress: false,
-  images: {
-    domains: ['www.nokia.com']
-  }
+images: {
+  remotePatterns: [
+    {
+      protocol: 'https',
+      hostname: 'www.nokia.com',
+    },
+  ],
+}
 
 }
 
