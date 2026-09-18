@@ -12,3 +12,11 @@
 .pending-link {
   color: green !important;
 }
+
+.my-text {
+  font-family: var(--font-roboto);
+}
+
+.my-local-text {
+  font-family: var(--font-sunshine);
+}
